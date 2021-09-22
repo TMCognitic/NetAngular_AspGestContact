@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="~/home/index">Gestion de Contacts</a>
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        @Html.ActionLink("Login", "Login", "Auth", null, new { @class = "nav-link text-dark" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Register", "Register", "Auth", null, new { @class = "nav-link text-dark" })
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div class="text-center">
+                <h1 class="display-5">Ajouter ici la liste de contact après la présentation de la couche modèle</h1>
+            </div>
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            Morre Thierry &copy; @ViewData["Year"]
+        </div>
+    </footer>
+</body>
+</html>
+
+

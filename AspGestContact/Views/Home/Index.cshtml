@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="~/home/index">Gestion de Contacts</a>
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        @Html.ActionLink("Login", "Login", "Auth", null, new { @class = "nav-link text-dark" })
+                        @*<a class="nav-link text-dark" href="~/Auth/Login">Login</a>*@
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Register", "Register", "Auth", null, new { @class = "nav-link text-dark" })
+                        @*<a class="nav-link text-dark" href="~/Auth/Register">Register</a>*@
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div class="text-center">
+                <h1 class="display-5">Bienvenue sur ma gestion de contacts</h1>
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque ipsum ac leo eleifend dignissim. Mauris pellentesque enim nulla, vitae scelerisque nisi accumsan non. Duis erat elit, luctus quis tempor vel, tincidunt in nisl. Duis odio turpis, faucibus sit amet odio tincidunt, laoreet dapibus arcu. Nunc sed orci lorem. Curabitur vel sapien a quam efficitur efficitur in non ipsum. Sed porttitor lectus quis dolor scelerisque, vel vulputate risus tincidunt. Ut finibus ante mi, non ornare felis congue nec. Phasellus interdum enim et est sodales, ac dignissim quam viverra. Morbi non neque accumsan, posuere purus ac, egestas lacus. Maecenas et tristique ex, sit amet porta mi. Aenean consectetur vestibulum dui, cursus rhoncus dolor hendrerit sit amet. Curabitur laoreet sodales lorem, nec malesuada enim suscipit in. Praesent vitae velit ex. Aliquam facilisis odio vel arcu suscipit ornare.</p>
+                <p class="text-justify">Quisque consectetur pretium turpis venenatis lobortis. Fusce gravida ex non quam pulvinar, id sollicitudin magna posuere. Integer nec scelerisque lorem. Nam vel tortor sed diam viverra aliquam aliquet ac arcu. Suspendisse eleifend tincidunt erat ac consectetur. Nulla placerat orci metus, vel accumsan orci placerat et. Aliquam ligula justo, feugiat accumsan elit eleifend, suscipit scelerisque sapien. Aenean metus dui, iaculis molestie diam ut, porttitor tempus erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sed felis libero. Quisque malesuada sapien luctus augue auctor porttitor eu eu lectus. Mauris lacus tortor, semper non tempus sed, bibendum sit amet risus. Donec mattis dignissim aliquam. In suscipit metus sit amet leo tincidunt aliquet et quis elit. Quisque et mi vitae enim ornare congue at convallis lorem.</p>
+            </div>
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            Morre Thierry &copy; @ViewData["Year"]
+        </div>
+    </footer>
+</body>
+</html>
+
+
